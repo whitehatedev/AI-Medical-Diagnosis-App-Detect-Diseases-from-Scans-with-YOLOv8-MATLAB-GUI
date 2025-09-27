@@ -1,0 +1,16 @@
+Open Command Prompt (not MATLAB):
+
+Press Win+R → type cmd → press Enter.
+
+Run the install command in Command Prompt:
+
+"C:\Users\Sahil Bhagat\AppData\Local\Programs\Python\Python310\python.exe" -m pip install ultralytics
+
+That installs YOLOv8 into the Python 3.10 environment you pointed MATLAB to.
+
+Restart MATLAB (important: because Python gets locked into session).
+
+In MATLAB, run:
+
+pyenv("Version","C:\\Users\\Sahil Bhagat\\AppData\\Local\\Programs\\Python\\Python310\\python.exe");
+py.importlib.import_module("ultralytics")
